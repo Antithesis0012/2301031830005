@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #mainform {
+            background-color: #D9D9D9;
+            position: absolute;
+            top: 80px;
+            left: 230px;
+            width: 953px;
+            height: 531px;
+            border-radius: 60px;
+
+        }
+
+        #email {
+            position: absolute;
+            top: 305px;
+            left: 320px;
+        }
+
+        #pass {
+            position: absolute;
+            top: 400px;
+            left: 289px;
+        }
+
+        .labell {
+            font-size: 25px;
+        }
+
+        .recpara {
+            font-size: 25px;
+            font-family: Caveat;
+            background-color: #D9D9D9;
+            border: none;
+            outline: none;
+            width: 400px;
+        }
+
+        #rec1 {
+            position: absolute;
+            top: 305px;
+            left: 396px;
+        }
+
+        #rectext1 {
+            position: absolute;
+            top: 307px;
+            left: 430px;
+        }
+
+        #rec2 {
+            position: absolute;
+            top: 400px;
+            left: 396px;
+        }
+
+        #rectext2 {
+            position: absolute;
+            top: 401px;
+            left: 430px;
+        }
+
+        #submit {
+            position: absolute;
+            top: 495px;
+            left: 560px;
+        }
+
+        #linko {
+            position: absolute;
+            top: 556px;
+            left: 612px;
+        }
+
+        a:link {
+            color: #881C70;
+            text-decoration: none;
+        }
+        #Registration {
+            position: absolute;
+            top: 87px;
+            left: 287px;
+            font-size: 40px;
+            color: #881C70;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainform"></div>
+    <div id="Registration">Login Form</div>
+    <div id="pass" class="labell">
+        Password :
+    </div>
+    <div id="email" class="labell">
+        Email :
+    </div>
+    <img id="rec1" draggable="false" src="asset/paralleo.svg" alt="">
+    <img id="rec2" draggable="false" src="asset/paralleo.svg" alt="">
+    <div id="linko"><a class="labell" href="form.html">Registration form</a></div>
+    <form method="post" action="home.html">
+        <input id="rectext1" class="recpara" type="text">
+        <input id="rectext2" class="recpara" type="text">
+        <input id="submit" type="image" src="asset/continue.svg" alt="submit" />
+    </form>
+</body>
+
+</html>

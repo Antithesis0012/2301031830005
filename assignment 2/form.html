@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        #mainform {
+            background-color: #D9D9D9;
+            position: absolute;
+            top: 80px;
+            left: 230px;
+            width: 953px;
+            height: 531px;
+            border-radius: 60px;
+
+        }
+
+        #Registration {
+            position: absolute;
+            top: 87px;
+            left: 287px;
+            font-size: 40px;
+            color: #881C70;
+        }
+
+        #ln {
+            position: absolute;
+            top: 207px;
+            left: 720px;
+        }
+
+        #fn {
+            position: absolute;
+            top: 207px;
+            left: 308px;
+        }
+
+        #agee {
+            position: absolute;
+            top: 305px;
+            left: 913px;
+        }
+        #email {
+            position: absolute;
+            top: 305px;
+            left: 320px;
+        }
+        #pass{
+            position: absolute;
+            top: 400px;
+            left: 289px;
+        }
+        .recpara{
+            font-size: 25px;
+            font-family: Caveat;
+            background-color: #D9D9D9;
+            border: none;
+            outline: none;
+            width: 400px;
+        }
+ 
+        .inputround {
+            font-size: 25px;
+            font-family: Caveat;
+            background-color: #D9D9D9;
+            border-radius: 10px;
+            width: 218px;
+
+        }
+
+        .labell {
+            font-size: 25px;
+        }
+
+        #finp {
+            position: absolute;
+            top: 207px;
+            left: 845px;
+        }
+
+        #linp {
+            position: absolute;
+            top: 207px;
+            left: 433px;
+        }
+
+        #ag {
+            position: absolute;
+            top: 305px;
+            left: 981px;
+            width: 73px;
+        }
+
+        #male {
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Chrome, Safari, Opera */
+            transform: scale(1.5);
+            position: absolute;
+            top: 415px;
+            left: 905px;
+        }
+
+        #female {
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Chrome, Safari, Opera */
+            transform: scale(1.5);
+            position: absolute;
+            top: 415px;
+            left: 1012px
+        }
+
+        #malelable {
+
+            position: absolute;
+            top: 407px;
+            left: 934px;
+        }
+
+        #flelable {
+
+            position: absolute;
+            top: 407px;
+            left: 1044px;
+        }
+        #rec1{
+            position: absolute;
+            top: 305px;
+            left: 396px;
+        }
+        #rectext1{
+            position: absolute;
+            top: 307px;
+            left: 430px;
+        }
+        #rec2{
+            position: absolute;
+            top: 400px;
+            left: 396px;
+        }
+        #rectext2{
+            position: absolute;
+            top: 401px;
+            left: 430px;
+        }
+        #submit{
+            position: absolute;
+            top: 495px;
+            left: 560px;
+        }
+        #linko{
+            position: absolute;
+            top: 556px;
+            left: 640px;
+        }
+        a:link{
+            color: #881C70;
+            text-decoration: none;
+        }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="mainform"></div>
+    <div id="Registration">Registration Form</div>
+    <div id="fn" class="labell">
+        First Name :
+    </div>
+    <div id="ln" class="labell">
+        Last Name :
+    </div>
+    <div id="agee" class="labell">
+        Age :
+    </div>
+    <div id="email" class="labell">
+          Email : 
+    </div>
+    <div id="pass" class="labell">
+        Password :   
+  </div>
+  <div id="linko"><a class="labell" href="logi.html">Login form</a></div>
+    <img id="rec1" draggable="false" src="asset/paralleo.svg" alt="">
+    <img id="rec2" draggable="false" src="asset/paralleo.svg" alt="">
+    <form method="post" action="logi.html">
+        <input class="inputround" id="finp" type="text" name="firsrname">
+        <input class="inputround" id="linp" type="text" name="firsrname">
+        <input class="inputround" id="ag" type="text" name="firsrname">
+        <input id="male" type="radio" name="gender">
+        <label id="malelable" class="labell" for="male">Male </label>
+        <input id="female" type="radio" name="gender">
+        <label id="flelable" class="labell" for="female"> Female</label>
+        <input id="rectext1" class="recpara" type="text">
+        <input id="rectext2" class="recpara" type="text">
+        <input id="submit" type="image" src="asset/continue.svg" alt="submit" /> 
+    </form>
+</body>
+
+</html>

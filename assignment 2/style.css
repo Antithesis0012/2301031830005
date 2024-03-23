@@ -1,0 +1,9 @@
+body {
+background-image: linear-gradient(to bottom, #120f11, #301829, #4f1d42, #701f5d, #931d79);
+background-repeat: no-repeat;
+width: 1366px;
+height: 768px;
+overflow: hidden;
+font-family: 'Caveat';
+
+}
