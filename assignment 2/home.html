@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        @keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
         #nav {
             position: absolute;
             top: 0px;
@@ -63,12 +68,32 @@
             top: 256px;
             left: 910px;
         }
+        .gridcont {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.griditem {
+ 
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  animation: mymove 5s infinite;
+  
+}
+
     </style>
 
 </head>
 
 <body>
-    <div id="nav">
+    <div id="nav" class="flex-container">
         <img draggable="false" src="asset/Group 3.svg" alt="">
         <div id="moreinfo"><a style="text-decoration:none" href="moreinfo.html">More Info</a></div>
         <div id="aboutus"><a style="text-decoration:none" href="aboutus.html">About us</a></div>
@@ -76,13 +101,13 @@
     <div id="welcome">
         Welcome, Username
 
-    </div>
-    <div id="picher">
+    </div class="gridcont">
+    <div id="picher" class="griditem">
         <a href="picture.html">
             <img draggable="false" src="asset/picjer.svg" alt="">
         </a>
     </div>
-    <div id="mujik">
+    <div id="mujik" class="griditem">
         <a href="music.html">
             <img draggable="false" src="asset/mujik.svg" alt="">
         </a>
